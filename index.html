@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Desenvolvedor Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <div class="noise"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span>
+      <span class="nav-logo-name">EnzoGabrielCODE</span>
+      <span class="nav-logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+      <li><a href="#projetos" class="nav-link">Projetos</a></li>
+      <li><a href="#habilidades" class="nav-link">Skills</a></li>
+      <li><a href="#documentos" class="nav-link">Docs</a></li>
+      <li><a href="#certificados" class="nav-link">Certs</a></li>
+      <li><a href="#eventos" class="nav-link">Eventos</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+      <li><a href="#curriculo" class="mobile-link">Currículo</a></li>
+      <li><a href="#projetos" class="mobile-link">Projetos</a></li>
+      <li><a href="#habilidades" class="mobile-link">Skills</a></li>
+      <li><a href="#documentos" class="mobile-link">Docs</a></li>
+      <li><a href="#certificados" class="mobile-link">Certs</a></li>
+      <li><a href="#eventos" class="mobile-link">Eventos</a></li>
+      <li><a href="#contato" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">// FATEC São José dos Campos</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-name">Enzo Gabriel</span>
+        <span class="hero-role">Full Stack<br/>Developer</span>
+      </h1>
+      <p class="hero-desc reveal">
+        Desenvolvendo aplicações web, APIs e soluções baseadas em
+        <span class="highlight">HTML · CSS · JS · Python · SQL · Java</span>
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projetos" class="btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn-ghost">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window reveal">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">profile.js</span>
+        </div>
+        <pre class="code-content"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>:    <span class="c-str">"Enzo Gabriel de Paula"</span>,
+  <span class="c-prop">course</span>:  <span class="c-str">"DSM – FATEC SJC"</span>,
+  <span class="c-prop">goal</span>:    <span class="c-str">"Full Stack Dev"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>,
+    <span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>, <span class="c-str">"Java"</span>
+  ],
+  <span class="c-prop">open</span>: <span class="c-kw">true</span>
+};</code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Apresentação</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="lead reveal">
+            Olá! Sou <strong>Enzo</strong>, estudante de
+            <strong>Desenvolvimento de Software Multiplataforma</strong> na FATEC São José dos Campos.
+          </p>
+          <p class="reveal">
+            Desenvolvedor Full-Stack em formação. Possuo uma base sólida na construção de interfaces com HTML, CSS,
+            JavaScript e TypeScript, e estou expandindo continuamente minhas habilidades no back-end através
+            do desenvolvimento de projetos utilizando Java e Python.
+          </p>
+          <p class="reveal">
+            Busco minha primeira oportunidade
+            profissional para aplicar meus conhecimentos de ponta a ponta na criação de soluções completas e
+            eficientes. Sou movido por desafios técnicos e tenho vivência prática com gestão ágil de projetos.
+          </p>
+        </div>
+        <div class="sobre-card reveal">
+          <div class="info-item">
+            <span class="info-label">Curso</span>
+            <span class="info-value">DSM – FATEC SJC</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Foco</span>
+            <span class="info-value">Full Stack Development</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Localização</span>
+            <span class="info-value">São José dos Campos – SP</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Status</span>
+            <span class="info-value status-open">Disponível para oportunidades</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="curriculo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Currículo</h2>
+      </div>
+      <div class="cv-grid">
+        <div class="cv-column">
+          <h3 class="cv-col-title"><span class="cv-icon">🎓</span> Formação Acadêmica</h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2020 – 2022</span>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <p>ETEC - Escola Técnica Dr. Geraldo José Rodrigues Alckmin - Taubaté</p>
+              </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 – 202X</span>
+                <h4>Desenvolvimento de Software Multiplataforma</h4>
+                <p>FATEC - Prof. Jessen Vidal - São José dos Campos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cv-column">
+          <h3 class="cv-col-title"><span class="cv-icon">📜</span> Cursos & Certificações</h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4>Front-end do zero e Lógica de programação</h4>
+                <p>DIO (Digital Innovation One)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Projetos</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Front-end</span>
+            <div class="project-links">
+              <a href="https://github.com/EnzoGabrielCode/spider-man-multiversus" target="_blank" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              </a>
+              <a href="https://enzogabrielcode.github.io/spider-man-multiversus/index.html" target="_blank" class="project-link" title="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Multiverso Spider-man</h3>
+          <p class="project-desc">
+            Este projeto é uma página dedicada ao multiverso do Homem-Aranha, com diversas seções
+            criadas para apresentar cada filme da franquia de forma única e interativa.
+          </p>
+          <div class="project-problem">
+            <span class="problem-label">Atuação:</span>
+            Programador.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Front-end</span>
+            <div class="project-links">
+              <a href="https://github.com/EnzoGabrielCode/landing-page-mundo-invertido" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              </a>
+              <a href="https://enzogabrielcode.github.io/assets/projects/mundo-invertido/index.html" target="_blank" class="project-link" title="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Mundo Invertido</h3>
+          <p class="project-desc">
+            Este projeto é inspirado na série Stranger Things, desenvolvido para oferecer uma experiência interativa e explorar de forma criativa os elementos icônicos da trama.
+          </p>
+          <div class="project-problem">
+            <span class="problem-label">Atuação:</span>
+            Programador.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Aplicação completa</span>
+            <div class="project-links">
+              <a href="https://github.com/EnzoGabrielCode/landing-page-mundo-invertido" class="project-link" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Sistema de Apontamento de Horas (Em andamento)</h3>
+          <p class="project-desc">
+            Desenvolvimento de um sistema web voltado para a gestão e acompanhamento de horas em projetos de software.
+          </p>
+          <div class="project-problem">
+            <span class="problem-label">Problema:</span>
+              O principal dor do cliente está na dificuldade de organizar e gerir a equipe de forma eficiente diante do crescente volume de demandas. A falta de um processo centralizado e a lentidão no fluxo de informações geram gargalos operacionais que quebram a dinâmica do trabalho diário.
+          </div>
+          <div class="project-problem">
+            <span class="problem-label">Atuação:</span>
+              Product Owner.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">React</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Habilidades</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title">Hard Skills</h3>
+
+          <div class="skill-category">
+            <span class="skill-cat-label">Linguagens</span>
+            <div class="skill-chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <span class="skill-cat-label">Frameworks & Libs</span>
+            <div class="skill-chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Flask</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <span class="skill-cat-label">Banco de Dados</span>
+            <div class="skill-chips">
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <span class="skill-cat-label">Ferramentas</span>
+            <div class="skill-chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Docker</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <h3 class="skills-group-title">Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-card">
+              <span class="soft-icon">🤝</span>
+              <span>Trabalho em equipe</span>
+            </div>
+            <div class="soft-card">
+              <span class="soft-icon">📋</span>
+              <span>Organização</span>
+            </div>
+            <div class="soft-card">
+              <span class="soft-icon">🔍</span>
+              <span>Resolução de problemas</span>
+            </div>
+            <div class="soft-card">
+              <span class="soft-icon">💬</span>
+              <span>Comunicação</span>
+            </div>
+            <div class="soft-card">
+              <span class="soft-icon">🚀</span>
+              <span>Proatividade</span>
+            </div>
+            <div class="soft-card">
+              <span class="soft-icon">📚</span>
+              <span>Aprendizado contínuo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="documentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Documentos Acadêmicos</h2>
+      </div>
+      <div class="docs-grid">
+
+        <div class="doc-card reveal">
+          <div class="doc-icon">📄</div>
+          <div class="doc-info">
+            <span class="doc-type">API - 1º Semestre</span>
+            <h4 class="doc-title">Estatísticas de Comércio Exterior do Estado de São Paulo</h4>
+            <p class="doc-desc">O objetivo do projeto é fornecer uma solução eficiente para monitorar as tendências de mercado (importação e exportação de produtos) específicas do estado de São Paulo, permitindo que usuários acessem e analisem dados de forma intuitiva e prática.</p>
+            <a href="https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025" target="_blank" class="doc-link">Ver documento →</a>
+          </div>
+        </div>
+
+        <div class="doc-card reveal">
+          <div class="doc-icon">📄</div>
+          <div class="doc-info">
+            <span class="doc-type">API - 2º Semestre</span>
+            <h4 class="doc-title">Plataforma Integrada para Gestão Administrativa, Comercial e Operacional - Newe</h4>
+            <p class="doc-desc">A plataforma Newe CRM consiste em um sistema que visa a centralização de dados e processos em uma única plataforma que permite um maior controle e acompanhamento de treinamentos, vendas e operações, além de relatórios precisos e em tempo real para tomada de decisão, reduzindo retrabalho e risco de erros, de maneira rápida, eficiente e direta.</p>
+            <a href="https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025" target="_blank" class="doc-link">Ver documento →</a>
+          </div>
+        </div>
+
+        <div class="doc-card reveal">
+          <div class="doc-icon">📝</div>
+          <div class="doc-info">
+            <span class="doc-type">API - 3º Semestre</span>
+            <h4 class="doc-title">Controle de Apontamento de Horas - GSW</h4>
+            <p class="doc-desc">O desafio consiste em criar um sistema centralizado de apontamento de horas para controlar projetos, clientes e recursos, substituindo registros dispersos (planilhas, mensagens e anotações). O objetivo é organizar o registro de trabalho, dar visibilidade ao esforço gasto, custos envolvidos e valores a serem cobrados, sem exigir que o usuário preencha informações complexas.</p>
+            <a href="https://docs.google.com/document/d/1O_trfXtQ8lO5D2ksU1aD-819RmUyD9XAhrF1bne7AYY/edit?tab=t.25542cr4btod#heading=h.nkrmkhcbfqdq" target="_blank" class="doc-link">Ver documento →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-alt" id="certificados">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Certificados</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">✓</div>
+          <a href="src/pdfs/certificado bootcamp front-end.pdf" target="_blank">
+            <div class="cert-info">
+              <h4>Bootcamp Front-end do zero</h4>
+              <span class="cert-issuer">DIO (Digital Innovation One)</span>
+              <span class="cert-year">2024</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">✓</div>
+          <a href="src/pdfs/certificado bootcamp logica.pdf" target="_blank">
+            <div class="cert-info">
+              <h4>Bootcamp Lógica de programação</h4>
+              <span class="cert-issuer">DIO (Digital Innovation One)</span>
+              <span class="cert-year">2024</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="eventos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Eventos & Extracurricular</h2>
+      </div>
+      <div class="events-list">
+
+        <div class="event-item reveal">
+          <div class="event-left">
+            <span class="event-year">2025</span>
+            <span class="event-type marathon">Feira de Soluções</span>
+          </div>
+          <div class="event-right">
+            <h4>Feira de Soluções FATEC</h4>
+            <p>Feira de Soluções é um evento disponibilzado pela FATEC para a apresentação dos projetos desenvolvidos no semestre.</p>
+          </div>
+        </div>
+        <div class="event-item reveal">
+          <div class="event-left">
+            <span class="event-year">2026</span>
+            <span class="event-type marathon">Maratona</span>
+          </div>
+          <div class="event-right">
+            <h4>Maratona de Programação FATEC</h4>
+            <p>Equipe CodeMasters · Solução algorítmica para otimização logística · Top 10 equipes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">08</span>
+        <h2 class="section-title">Contato</h2>
+      </div>
+      <p class="contact-lead reveal">
+        Aberto a oportunidades, colaborações e novos projetos.
+        Vamos conversar?
+      </p>
+      <div class="contact-cards">
+        <a href="https://linkedin.com/in/enzo-gabriel-de-paula-8795a8332/" class="contact-card reveal" target="_blank" rel="noopener">
+          <span class="contact-card-icon">in</span>
+          <div>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">linkedin.com/in/enzogabrieldepaula</span>
+          </div>
+        </a>
+        <a href="https://github.com/EnzoGabrielCode" class="contact-card reveal" target="_blank" rel="noopener">
+          <span class="contact-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          </span>
+          <div>
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">github.com/EnzoGabrielCode</span>
+          </div>
+        </a>
+        <a href="mailto:enzokof2005@gmail.com" class="contact-card reveal">
+          <span class="contact-card-icon">@</span>
+          <div>
+            <span class="contact-card-label">E-mail</span>
+            <span class="contact-card-value">enzokof2005@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Desenvolvido por <strong>Enzo</strong></p>
+    <p class="footer-stack">HTML · CSS · JavaScript</p>
+  </footer>
+
+  <script src="src/scripts/script.js"></script>
+</body>
+</html>
