@@ -10,6 +10,7 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.left = mouseX + 'px';
   cursor.style.top  = mouseY + 'px';
 });
+
 function animateTrail() {
   trailX += (mouseX - trailX) * 0.12;
   trailY += (mouseY - trailY) * 0.12;
@@ -23,7 +24,6 @@ document.querySelectorAll('a, button, .project-card, .cert-card, .contact-card, 
   el.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
   el.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
 });
-
 
 const navbar = document.getElementById('navbar');
 
@@ -118,6 +118,7 @@ style.textContent = `.nav-link.active { color: var(--text) !important; }
 .nav-link.active::after { width: 100% !important; }`;
 document.head.appendChild(style);
 
+
 function typeEffect(element, text, speed = 80) {
   let i = 0;
   element.textContent = '';
@@ -127,6 +128,7 @@ function typeEffect(element, text, speed = 80) {
     if (i >= text.length) clearInterval(interval);
   }, speed);
 }
+
 window.addEventListener('load', () => {
   setTimeout(() => {
     const heroName = document.querySelector('.hero-name');
@@ -142,12 +144,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      const offset = 80; 
+      const offset = 80;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
   });
 });
+
 
 document.querySelectorAll('.project-card:not(.project-add)').forEach(card => {
   card.addEventListener('mousemove', (e) => {
@@ -164,7 +167,6 @@ document.querySelectorAll('.project-card:not(.project-add)').forEach(card => {
     card.style.transform = '';
   });
 });
-
 
 const chipObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -195,6 +197,7 @@ console.log(
   '%cDesenvolvido com HTML · CSS · JS',
   'color: #00e5a0; font-size: 0.9rem;'
 );
+
 
 document.querySelectorAll('.project-skills-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
