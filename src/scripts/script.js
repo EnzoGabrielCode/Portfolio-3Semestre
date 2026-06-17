@@ -1,6 +1,3 @@
-/* ===========================
-   CUSTOM CURSOR
-   =========================== */
 const cursor = document.getElementById('cursor');
 const cursorTrail = document.getElementById('cursorTrail');
 
@@ -13,8 +10,6 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.left = mouseX + 'px';
   cursor.style.top  = mouseY + 'px';
 });
-
-// Smooth trail animation
 function animateTrail() {
   trailX += (mouseX - trailX) * 0.12;
   trailY += (mouseY - trailY) * 0.12;
@@ -24,16 +19,12 @@ function animateTrail() {
 }
 animateTrail();
 
-// Expand cursor on interactive elements
 document.querySelectorAll('a, button, .project-card, .cert-card, .contact-card, .chip').forEach(el => {
   el.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
   el.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
 });
 
 
-/* ===========================
-   NAVBAR — scroll effect
-   =========================== */
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -44,17 +35,12 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
-/* ===========================
-   HAMBURGER MENU
-   =========================== */
 const hamburger   = document.getElementById('hamburger');
 const mobileMenu  = document.getElementById('mobileMenu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
-  // Animate hamburger lines
   const spans = hamburger.querySelectorAll('span');
   if (mobileMenu.classList.contains('open')) {
     spans[0].style.transform = 'translateY(7px) rotate(45deg)';
@@ -67,7 +53,6 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-// Close menu when a link is clicked
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
@@ -78,7 +63,6 @@ mobileLinks.forEach(link => {
   });
 });
 
-// Close menu on outside click
 document.addEventListener('click', (e) => {
   if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
     mobileMenu.classList.remove('open');
@@ -89,14 +73,9 @@ document.addEventListener('click', (e) => {
   }
 });
 
-
-/* ===========================
-   SCROLL REVEAL
-   =========================== */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      // Staggered delay for sibling elements
       const siblings = entry.target.parentElement.querySelectorAll('.reveal');
       let delay = 0;
       siblings.forEach((sib, idx) => {
@@ -115,11 +94,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-
-/* ===========================
-   ACTIVE NAV LINK — highlight
-   on scroll
-   =========================== */
 const sections  = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-link');
 
@@ -139,16 +113,11 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(sec => sectionObserver.observe(sec));
 
-// Active nav style
 const style = document.createElement('style');
 style.textContent = `.nav-link.active { color: var(--text) !important; }
 .nav-link.active::after { width: 100% !important; }`;
 document.head.appendChild(style);
 
-
-/* ===========================
-   TYPING EFFECT — hero name
-   =========================== */
 function typeEffect(element, text, speed = 80) {
   let i = 0;
   element.textContent = '';
@@ -158,8 +127,6 @@ function typeEffect(element, text, speed = 80) {
     if (i >= text.length) clearInterval(interval);
   }, speed);
 }
-
-// Run after a short delay so the reveal animation fires first
 window.addEventListener('load', () => {
   setTimeout(() => {
     const heroName = document.querySelector('.hero-name');
@@ -170,26 +137,18 @@ window.addEventListener('load', () => {
   }, 400);
 });
 
-
-/* ===========================
-   SMOOTH SCROLL for anchor links
-   =========================== */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      const offset = 80; // navbar height
+      const offset = 80; 
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
   });
 });
 
-
-/* ===========================
-   TILT EFFECT — project cards
-   =========================== */
 document.querySelectorAll('.project-card:not(.project-add)').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect  = card.getBoundingClientRect();
@@ -207,9 +166,6 @@ document.querySelectorAll('.project-card:not(.project-add)').forEach(card => {
 });
 
 
-/* ===========================
-   SKILL CHIPS — stagger entrance
-   =========================== */
 const chipObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -231,9 +187,6 @@ const chipObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skills-group').forEach(group => chipObserver.observe(group));
 
 
-/* ===========================
-   CONSOLE EASTER EGG
-   =========================== */
 console.log(
   '%c👾 Portfólio carregado com sucesso!',
   'color: #6c63ff; font-size: 1.2rem; font-weight: bold;'
@@ -242,3 +195,18 @@ console.log(
   '%cDesenvolvido com HTML · CSS · JS',
   'color: #00e5a0; font-size: 0.9rem;'
 );
+
+document.querySelectorAll('.project-skills-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = btn.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+    btn.setAttribute('aria-expanded', String(!expanded));
+
+    if (expanded) {
+      body.hidden = true;
+    } else {
+      body.hidden = false;
+    }
+  });
+});

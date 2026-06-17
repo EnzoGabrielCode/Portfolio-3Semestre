@@ -246,37 +246,111 @@
           </div>
         </article>
 
-        <!-- Projeto 3 -->
-        <article class="project-card reveal">
+<!-- Projeto 3 — card expandido com painel de skills -->
+        <article class="project-card project-card--featured reveal">
           <div class="project-header">
             <span class="project-tag">Aplicação completa</span>
             <div class="project-links">
-              <a href="https://github.com/EnzoGabrielCode/landing-page-mundo-invertido" class="project-link" title="GitHub">
+              <a href="https://github.com/Team-Chronos/AV-DSM-3SEMESTRE-2026" target="_blank" class="project-link" title="GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
               </a>
             </div>
           </div>
-          <h3 class="project-title">Sistema de Apontamento de Horas (Em andamento)</h3>
+          <h3 class="project-title">Sistema de Apontamento de Horas <span class="project-wip">Em andamento</span></h3>
           <p class="project-desc">
-            Desenvolvimento de um sistema web voltado para a gestão e acompanhamento de horas em projetos de software.
+            Desenvolvimento de um sistema web para gestão e acompanhamento de horas em projetos de software,
+            em parceria com a empresa GSW como projeto integrador do 3º semestre.
           </p>
           <div class="project-problem">
             <span class="problem-label">Problema:</span>
-              O principal dor do cliente está na dificuldade de organizar e gerir a equipe de forma eficiente diante do crescente volume de demandas. A falta de um processo centralizado e a lentidão no fluxo de informações geram gargalos operacionais que quebram a dinâmica do trabalho diário.
+            O cliente enfrentava dificuldade em organizar a equipe diante do crescente volume de demandas.
+            A falta de um processo centralizado gerava gargalos operacionais e quebrava a dinâmica do trabalho diário.
           </div>
           <div class="project-problem">
             <span class="problem-label">Atuação:</span>
-              Product Owner.
+            Product Owner — responsável pelo backlog, priorização das User Stories e interface com o cliente.
           </div>
           <div class="project-tech">
             <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">HTML</span>
-            <span class="tech-badge">CSS</span>
-            <span class="tech-badge">Node.js</span>
             <span class="tech-badge">TypeScript</span>
             <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Docker</span>
           </div>
+
+          <!-- PAINEL DE SKILLS APLICADAS — cole este bloco em qualquer project-card -->
+          <div class="project-skills-panel">
+            <button class="project-skills-toggle" aria-expanded="false">
+              <span class="toggle-label">Ver skills aplicadas neste projeto</span>
+              <span class="toggle-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="project-skills-body" hidden>
+              <div class="project-skills-cols">
+                <div class="ps-col">
+                  <h4 class="ps-col-title">Hard Skills</h4>
+                  <ul class="ps-list">
+                    <li class="ps-item">
+                      <span class="ps-badge">React + TypeScript</span>
+                      <p>Construção das telas do sistema com componentes reutilizáveis e tipagem estática, garantindo maior confiabilidade no front-end.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge">Node.js</span>
+                      <p>Criação das rotas da API REST que conectam o front-end ao banco de dados.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge">Java + Spring Boot</span>
+                      <p>Desenvolvimento das regras de negócio no back-end e exposição dos endpoints consumidos pelo front.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge">MySQL</span>
+                      <p>Modelagem e consultas ao banco de dados que armazena usuários, projetos e apontamentos.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge">Docker</span>
+                      <p>Containerização do ambiente para padronizar a execução entre todos os membros da equipe.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge">Git + GitHub</span>
+                      <p>Controle de versão, gestão de Pull Requests e revisão de código em equipe ao longo das sprints.</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ps-col">
+                  <h4 class="ps-col-title">Soft Skills</h4>
+                  <ul class="ps-list">
+                    <li class="ps-item">
+                      <span class="ps-badge ps-badge--soft">Comunicação</span>
+                      <p>Atuei como PO e ponto de contato entre o cliente GSW e o time, traduzindo necessidades de negócio em requisitos técnicos e apresentando as entregas de cada sprint.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge ps-badge--soft">Organização</span>
+                      <p>Gerenciei o backlog e priorizei as User Stories com critérios de aceitação claros, mantendo o board atualizado para a equipe durante todas as sprints.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge ps-badge--soft">Resolução de problemas</span>
+                      <p>Identifiquei gargalos na integração entre front-end e back-end e propus soluções de arquitetura para resolver impedimentos sem comprometer o prazo.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge ps-badge--soft">Proatividade</span>
+                      <p>Antecipei riscos técnicos e propus melhorias no fluxo de apontamento que simplificaram a experiência do usuário final, além do escopo inicial.</p>
+                    </li>
+                    <li class="ps-item">
+                      <span class="ps-badge ps-badge--soft">Aprendizado contínuo</span>
+                      <p>Aprendi Spring Boot e Docker durante o projeto, sem experiência prévia, buscando documentação e apoio dos colegas para entregar dentro do prazo.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM DO PAINEL DE SKILLS -->
+
         </article>
+
       </div>
     </div>
   </section>
@@ -288,6 +362,7 @@
         <h2 class="section-title">Habilidades</h2>
       </div>
       <div class="skills-layout">
+
         <div class="skills-group reveal">
           <h3 class="skills-group-title">Hard Skills</h3>
 
@@ -297,6 +372,7 @@
               <span class="chip">HTML5</span>
               <span class="chip">CSS3</span>
               <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
               <span class="chip">Python</span>
               <span class="chip">Java</span>
               <span class="chip">SQL</span>
@@ -306,8 +382,9 @@
           <div class="skill-category">
             <span class="skill-cat-label">Frameworks & Libs</span>
             <div class="skill-chips">
+              <span class="chip">React</span>
               <span class="chip">Node.js</span>
-              <span class="chip">Flask</span>
+              <span class="chip">Spring Boot</span>
             </div>
           </div>
 
@@ -330,6 +407,7 @@
             </div>
           </div>
         </div>
+
         <div class="skills-group reveal">
           <h3 class="skills-group-title">Soft Skills</h3>
           <div class="soft-skills-grid">
@@ -359,6 +437,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
